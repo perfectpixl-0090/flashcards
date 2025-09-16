@@ -278,9 +278,9 @@ struct ContentView: View {
             .cornerRadius(15)
             .shadow(radius: 5)
             
-            // Character and Shop buttons
-            HStack(spacing: 20) {
-                // Character button
+            // Character button
+            HStack {
+                Spacer()
                 Button(action: {
                     game.showCharacterSelection = true
                 }) {
@@ -312,31 +312,7 @@ struct ContentView: View {
                     .cornerRadius(20)
                     .shadow(color: .purple.opacity(0.4), radius: 10, x: 0, y: 5)
                 }
-                
-                // Shop button
-                Button(action: {
-                    // TODO: Implement shop
-                }) {
-                    VStack(spacing: 8) {
-                        Image(systemName: "cart.circle.fill")
-                            .font(.system(size: 40))
-                            .foregroundColor(.white)
-                        
-                        Text("Shop")
-                            .font(.system(size: 14, weight: .bold, design: .rounded))
-                            .foregroundColor(.white)
-                    }
-                    .frame(width: 120, height: 100)
-                    .background(
-                        LinearGradient(
-                            colors: [.orange, .red],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
-                    .cornerRadius(20)
-                    .shadow(color: .orange.opacity(0.4), radius: 10, x: 0, y: 5)
-                }
+                Spacer()
             }
                     }
                     
