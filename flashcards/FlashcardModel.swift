@@ -36,8 +36,8 @@ enum AnimalType: String, CaseIterable {
     case owl = "owl"
     case panda = "panda"
     case tiger = "tiger"
-    case lion = "lion"
-    case elephant = "elephant"
+    case lion = "Mr. Smile"
+    case elephant = "Mr. Poo"
 }
 
 
